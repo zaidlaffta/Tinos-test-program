@@ -1,7 +1,5 @@
-#include "mote.h"
-int main()
-{
-mote_init();
-led0_on();
-sleep();
+module PowerupC {
+uses interface Boot;
+uses interface Leds;
 }
+implementation {
