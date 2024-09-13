@@ -1,4 +1,4 @@
-module PowerupC {
+module PowerupC  @safe() {
 uses interface Boot;
 uses interface Leds;
 }
@@ -7,3 +7,4 @@ event void Boot.booted() {
 call Leds.led0On();
 }
 }
+
